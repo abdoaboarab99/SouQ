@@ -1,1 +1,78 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --gold: #C6AD6F;
+  --dark-bg: #333;
+  --light-bg: #ffffff;
+  --text-color: #666;
+  --hover-text-color: var(--gold);
+  --font-primary: 'Baskervville', serif, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+body {
+  background-color: var(--light-bg);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.heading {
+  font-family: serif;
+  text-align: center;
+  font-size: 40px;
+  color: #333;
+  padding: 5px 0;
+  margin: 25px 0;
+  background: #EAEAEA;
+}
+
+.button {
+  font-family: sans-serif;
+  display: inline-block;
+  margin-top: 16px; /* 1rem = 16px */
+  border-radius: 80px; /* 5rem = 80px */
+  background: #3d3c3c;
+  color: #fff;
+  padding: 5px 30px; /* 0.9rem = 14.4px, 3.5rem = 56px */
+  cursor: pointer;
+  font-size: 20px; /* 2.3rem = 36.8px */
+  border: 0.1px solid #fff; /* 0.1rem = 1.6px, adjusted for practicality */
+}
+
+.button:hover {
+  background: var(--gold);
+}
+
+footer {
+  padding: 20px 5%;
+  background-color: var(--dark-bg);
+  color: var(--light-bg);
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+@media (max-width: 768px) {
+  header .navbar {
+      display: none;
+  }
+
+  header .menu-icon {
+      display: block;
+      cursor: pointer;
+  }
+}

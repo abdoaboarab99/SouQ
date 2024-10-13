@@ -1,0 +1,73 @@
+/* About Section Styles */
+.about {
+    margin-top: 70px;
+}
+  
+  .about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px 5%;
+  }
+  
+  .about .row .img {
+    flex: 1 1 400px;
+    max-width: 40%;
+  }
+  
+  .about .row .img img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  .about .row .content {
+    flex: 1 1 600px;
+    max-width: 50%;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+  
+  .about .row .content h3 {
+    font-family: serif;
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about .row .content p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+  }
+  
+  .about .content span {
+    color: var(--gold);
+  }
+  
+  @media (max-width: 768px) {
+    .about .row {
+      flex-direction: column;
+    }
+  
+    .about .row .img,
+    .about .row .content {
+      flex: 1 1 100%;
+    }
+  
+    .about .row .img {
+      margin-bottom: 20px;
+    }
+  
+    .about .row .content {
+      text-align: center;
+      padding: 20px;
+    }
+  }
+  

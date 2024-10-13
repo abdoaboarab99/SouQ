@@ -1,0 +1,10 @@
+<section class="products-page" id="products">
+    <h1 class="heading">All Products</h1>
+    <div class="box-container">
+        <app-single-card *ngFor="let product of paginatedProducts" [product]="product"></app-single-card>
+    </div>
+    <div class="pagination">
+        <button (click)="previousPage()" [disabled]="currentPage === 1">Previous</button>
+        <button (click)="nextPage()" [disabled]="currentPage * itemsPerPage >= products.length">Next</button>
+    </div>
+</section>

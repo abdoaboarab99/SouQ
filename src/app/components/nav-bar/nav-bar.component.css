@@ -1,0 +1,85 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  padding: .5rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: var(--font-primary);
+}
+
+.navbar .logo {
+  font-family: serif, sans-serif;
+  font-size: 36px;
+  font-weight: bolder;
+  color: #333;
+  
+}
+
+.navbar .logo span {
+  color: var(--gold);
+}
+
+.navbar .nav-links a {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 0 15px;
+  color: var(--text-color);
+  display: inline-block;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar .nav-links a:hover {
+  color: var(--gold);
+}
+
+.navbar .icons a {
+  font-size: 20px;
+  color: var(--dark-bg);
+  margin: 0 10px;
+  transition: color 0.2s ease-in-out;
+}
+
+.navbar .icons a:hover {
+  color: var(--gold);
+}
+
+@media (max-width: 768px) {
+  .navbar .nav-links {
+      display: none;
+  }
+
+  .navbar .menu-icon {
+      display: block;
+      font-size: 3rem;
+      cursor: pointer;
+  }
+}
+
+.navbar .icons span {
+  margin-right: 10px;
+  color: black; /* Adjust based on your theme */
+}
+
+.navbar .icons button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.navbar .icons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .user-name {
+  margin-left: 10px; /* Space between cart icon and user name */
+  font-size: 1rem;
+  color: black; /* Adjust color based on your theme */
+}

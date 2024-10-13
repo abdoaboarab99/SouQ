@@ -1,0 +1,192 @@
+{
+  "products": [
+    {
+      "name": "Flower Necklace Set",
+      "discount": "-11.11%",
+      "price": 450,
+      "originalPrice": 500,
+      "image": "assets/golden necklace.jpg",
+      "quantity": 1,
+      "id": "633e"
+    },
+    {
+      "name": "Moon Earrings",
+      "discount": "-14.3%",
+      "price": 350,
+      "originalPrice": 400,
+      "image": "assets/moon star sun earring.jpg",
+      "quantity": 1,
+      "id": "489b"
+    },
+    {
+      "name": "Hair Beads",
+      "discount": "-20%",
+      "price": 250,
+      "originalPrice": 300,
+      "image": "assets/hair.jpg",
+      "quantity": 1,
+      "id": "362c"
+    },
+    {
+      "name": "Upper Arm Cuff",
+      "discount": "-16.7%",
+      "price": 300,
+      "originalPrice": 350,
+      "image": "assets/arm.jpg",
+      "quantity": 1,
+      "id": "9188"
+    },
+    {
+      "name": "Isis Necklace",
+      "discount": "-11.11%",
+      "price": 450,
+      "originalPrice": 500,
+      "image": "assets/about.jpg",
+      "quantity": 1,
+      "id": "a0b4"
+    },
+    {
+      "name": "golden earring",
+      "discount": "-14.3%",
+      "price": 350,
+      "originalPrice": 400,
+      "image": "assets/golden earring.jpg",
+      "quantity": 1,
+      "id": "4779"
+    },
+    {
+      "name": "Sun Necklace",
+      "discount": "-20%",
+      "price": 250,
+      "originalPrice": 300,
+      "image": "assets/Sun Necklace.jpg",
+      "quantity": 1,
+      "id": "7b32"
+    },
+    {
+      "name": "Saturn Star Earrings",
+      "discount": "-16.7%",
+      "price": 300,
+      "originalPrice": 350,
+      "image": "assets/Saturn Star Earrings.jpg",
+      "quantity": 1,
+      "id": "6214"
+    },
+    {
+      "name": "comb",
+      "discount": "-11.11%",
+      "price": 450,
+      "originalPrice": 500,
+      "image": "assets/comb.jpg",
+      "quantity": 1,
+      "id": "2c0d"
+    },
+    {
+      "name": "Upper Arm Cuff",
+      "discount": "-14.3%",
+      "price": 350,
+      "originalPrice": 400,
+      "image": "assets/arm 3.jpg",
+      "quantity": 1,
+      "id": "3fbb"
+    },
+    {
+      "name": "lotus ring",
+      "discount": "-20%",
+      "price": 250,
+      "originalPrice": 300,
+      "image": "assets/lotus ring.jpg",
+      "quantity": 1,
+      "id": "e59c"
+    },
+    {
+      "name": "witchy necklace",
+      "discount": "-16.7%",
+      "price": 300,
+      "originalPrice": 350,
+      "image": "assets/witchy necklace.jpg",
+      "quantity": 1,
+      "id": "e337"
+    }
+  ],
+  "bestsellers": [
+    {
+      "name": "Flower Necklace Set",
+      "discount": "-11.11%",
+      "price": 450,
+      "originalPrice": 500,
+      "image": "assets/golden necklace.jpg",
+      "quantity": 1,
+      "id": "2f88"
+    },
+    {
+      "name": "Moon Earrings",
+      "discount": "-14.3%",
+      "price": 350,
+      "originalPrice": 400,
+      "image": "assets/moon star sun earring.jpg",
+      "quantity": 1,
+      "id": "7853"
+    },
+    {
+      "name": "Hair Beads",
+      "discount": "-20%",
+      "price": 250,
+      "originalPrice": 300,
+      "image": "assets/hair.jpg",
+      "quantity": 1,
+      "id": "2f17"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "Admin",
+      "email": "Admin@example.com",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "id": "2",
+      "name": "Abdo",
+      "email": "Abdo@example.com",
+      "password": "Abdo",
+      "role": "user"
+    },
+    {
+      "id": "3",
+      "name": "Rwan",
+      "email": "Rwan@example.com",
+      "password": "Rwan",
+      "role": "User"
+    },
+    {
+      "id": "4",
+      "name": "Bassant",
+      "email": "Bassant@example.com",
+      "password": "Bassant",
+      "role": "user"
+    },
+    {
+      "id": "41",
+      "name": "bassant",
+      "username": "bassant_mohamed",
+      "password": "1234",
+      "role": "User"
+    },
+    {
+      "id": "411",
+      "name": "bassant",
+      "username": "bassant_mohamed",
+      "password": "1234",
+      "role": "User"
+    },
+    {
+      "id": "4111",
+      "name": "aya ",
+      "username": "aya_aya",
+      "password": "1234",
+      "role": "User"
+    }
+  ]
+}

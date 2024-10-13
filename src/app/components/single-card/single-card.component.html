@@ -1,0 +1,13 @@
+<div class="box">
+    <span class="discount">{{ product.discount }}</span>
+    <div class="img">
+        <img [src]="product.image" alt="{{ product.name }}" />
+        <div class="icons">
+        <button class="cart-btn" (click)="onAddToCart()">Add to Cart</button>
+        </div>
+    </div>
+    <div class="content">
+        <h3>{{ product.name }}</h3>
+        <div class="price">{{ product.price }} <span>{{ product.originalPrice }}</span></div>
+    </div>
+</div>

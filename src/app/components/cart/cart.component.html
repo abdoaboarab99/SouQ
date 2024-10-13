@@ -1,0 +1,47 @@
+<section class="cart-page">
+    <div class="small-container">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr *ngFor="let item of cartItems">
+                <td>
+                    <div class="cart-info">
+                        <img src="{{ item.image }}" alt="{{ item.name }}" />
+                        <div>
+                            <p>{{ item.name }}</p>
+                            <small>Price: {{ item.price }} L.E</small>
+                            <br />
+                            <a href="#" (click)="removeFromCart(item)">Remove</a>
+                        </div>
+                    </div>
+                </td>
+                <td><input type="number" [(ngModel)]="item.quantity" (change)="updateCart(item)"/></td>
+                <td>{{ item.price * item.quantity }} L.E</td>
+            </tr>
+        </table>
+
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>{{ subtotal }} L.E</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>{{ tax }} L.E</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>{{ total }} L.E</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div class="checkout-btn-container">
+        <a href="#" class="btn" routerLink="/checkout">Checkout</a>
+    </div>
+</section>

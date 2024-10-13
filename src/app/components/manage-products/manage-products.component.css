@@ -1,0 +1,100 @@
+.container {
+  padding: 20px;
+  background-color: #f5f5f5; /* Consistent with the rest of the admin interface */
+}
+
+.container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.product-form, .bestseller-form {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+  color: #666;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button.btn {
+  padding: 10px;
+  margin: 5px;
+  color: white;
+  background-color: #4CAF50; /* Green, for positive actions */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button.btn-primary {
+  background-color: #007bff; /* Primary button color */
+}
+
+button.btn-warning {
+  background-color: #ffc107; /* Warning button for edit actions */
+}
+
+button.btn-danger {
+  background-color: #dc3545; /* Danger button for delete actions */
+}
+
+button.btn-secondary {
+  background-color: #6c757d; /* Secondary button for neutral actions like cancel */
+}
+
+button.btn:hover {
+  opacity: 0.85;
+}
+
+ul.product-list, ul.bestseller-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li div {
+  flex-grow: 1;
+}
+
+.error-message {
+  color: #dc3545; /* Error message in red */
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .product-form, .bestseller-form {
+    padding: 10px;
+  }
+
+  h2, h3 {
+    font-size: 20px;
+  }
+
+  input, button.btn {
+    padding: 8px;
+  }
+}

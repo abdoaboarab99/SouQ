@@ -1,0 +1,35 @@
+<div class="dashboard">
+  <h2>User Management Dashboard</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Role</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>
+          <span *ngIf="editingUserId !== user.id">{{ user.name }}</span>
+          <input *ngIf="editingUserId === user.id" [(ngModel)]="updatedUser.name" />
+        </td>
+        <td>
+          <span *ngIf="editingUserId !== user.id">{{ user.email }}</span>
+          <input *ngIf="editingUserId === user.id" [(ngModel)]="updatedUser.email" />
+        </td>
+        <td>
+          <span *ngIf="editingUserId !== user.id">{{ user.role }}</span>
+          <input *ngIf="editingUserId === user.id" [(ngModel)]="updatedUser.role" />
+        </td>
+        <td>
+          <button (click)="deleteUser(user.id)">Delete</button>
+          <button *ngIf="editingUserId !== user.id" (click)="editUser(user)">Edit</button>
+          <button *ngIf="editingUserId === user.id" (click)="updateUser()">Update</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-manage-products></app-manage-products>

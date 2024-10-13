@@ -1,0 +1,35 @@
+.icons-container {
+    background: #EAEAEA;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.icons {
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icons img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.icons .info h3 {
+    color: #333;
+    font-size: 20px;
+    margin: 0 0 5px 0;
+}
+
+.icons .info span {
+    color: #555;
+    font-size: 18px;
+}

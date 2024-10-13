@@ -1,0 +1,67 @@
+<div class="container">
+    <h2>Manage Products and Bestsellers</h2>
+    <form #productForm="ngForm" (ngSubmit)="addProduct(productForm)" class="product-form">
+      <h3>Add Product</h3>
+      <input [(ngModel)]="newProduct.name" name="name" placeholder="Product Name" required />
+      <input [(ngModel)]="newProduct.discount" name="discount" placeholder="Discount" required />
+      <input [(ngModel)]="newProduct.price" type="number" name="price" placeholder="Price" required />
+      <input [(ngModel)]="newProduct.originalPrice" type="number" name="originalPrice" placeholder="Original Price" required />
+      <input [(ngModel)]="newProduct.image" name="image" placeholder="Image URL" required />
+      <button type="submit" class="btn btn-primary">Add Product</button>
+    </form>
+  
+    <form #bestsellerForm="ngForm" (ngSubmit)="addBestseller(bestsellerForm)" class="bestseller-form">
+      <h3>Add Bestseller</h3>
+      <input [(ngModel)]="newBestseller.name" name="bestsellerName" placeholder="Bestseller Name" required />
+      <input [(ngModel)]="newBestseller.discount" name="bestsellerDiscount" placeholder="Discount" required />
+      <input [(ngModel)]="newBestseller.price" type="number" name="bestsellerPrice" placeholder="Price" required />
+      <input [(ngModel)]="newBestseller.originalPrice" type="number" name="bestsellerOriginalPrice" placeholder="Original Price" required />
+      <input [(ngModel)]="newBestseller.image" name="bestsellerImage" placeholder="Image URL" required />
+      <button type="submit" class="btn btn-primary">Add Bestseller</button>
+    </form>
+  
+    <div *ngIf="isLoading">Loading data...</div>
+    <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+  
+    <h3>Products</h3>
+    <ul class="product-list">
+      <li *ngFor="let product of products">
+        <div>{{ product.name }} - {{ product.price }}</div>
+        <button (click)="editProduct(product)" class="btn btn-warning">Edit</button>
+        <button (click)="deleteProduct(product.id)" class="btn btn-danger">Delete</button>
+      </li>
+    </ul>
+  
+    <div *ngIf="selectedProduct">
+      <h3>Edit Product</h3>
+      <form #editProductForm="ngForm" (ngSubmit)="updateProduct(editProductForm)">
+        <input [(ngModel)]="selectedProduct.name" name="editName" placeholder="Product Name" required />
+        <input [(ngModel)]="selectedProduct.discount" name="editDiscount" placeholder="Discount" required />
+        <input [(ngModel)]="selectedProduct.price" type="number" name="editPrice" placeholder="Price" required />
+        <input [(ngModel)]="selectedProduct.originalPrice" type="number" name="editOriginalPrice" placeholder="Original Price" required />
+        <button type="submit" class="btn btn-success">Update Product</button>
+        <button (click)="selectedProduct = null" class="btn btn-secondary">Cancel</button>
+      </form>
+    </div>
+  
+    <h3>Bestsellers</h3>
+    <ul class="bestseller-list">
+      <li *ngFor="let bestseller of bestsellers">
+        <div>{{ bestseller.name }} - {{ bestseller.price }}</div>
+        <button (click)="editBestseller(bestseller)" class="btn btn-warning">Edit</button>
+        <button (click)="deleteBestseller(bestseller.id)" class="btn btn-danger">Delete</button>
+      </li>
+    </ul>
+  
+    <div *ngIf="selectedBestseller">
+      <h3>Edit Bestseller</h3>
+      <form #editBestsellerForm="ngForm" (ngSubmit)="updateBestseller(editBestsellerForm)">
+        <input [(ngModel)]="selectedBestseller.name" name="editBestsellerName" placeholder="Bestseller Name" required />
+        <input [(ngModel)]="selectedBestseller.discount" name="editBestsellerDiscount" placeholder="Discount" required />
+        <input [(ngModel)]="selectedBestseller.price" type="number" name="editBestsellerPrice" placeholder="Price" required />
+        <button type="submit" class="btn btn-success">Update Bestseller</button>
+        <button (click)="selectedBestseller = null" class="btn btn-secondary">Cancel</button>
+      </form>
+    </div>
+  </div>
+  
